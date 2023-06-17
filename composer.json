@@ -1,0 +1,38 @@
+{
+    "name": "sirmekus/imela",
+    "description": "Laravel auth-based package to help users change email addresses securely.",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "illuminate/support": "^8.82|^9.0"
+    },
+    "autoload": {
+        "files": [
+            "app/imela.php"
+           ],
+        "psr-4": {
+            "SirMekus\\Imela\\": "app/Http/Controllers/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SirMekus\\Imela\\ImelaServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SirMekus",
+            "email": "mekus600@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

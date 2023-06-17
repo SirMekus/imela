@@ -28,6 +28,6 @@ class ChangeEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Change Of Email Address')->markdown('emails.dashboard.change-email');
+        return $this->subject('Change Of Email Address')->markdown('imela::emails.change-email');
     }
 }

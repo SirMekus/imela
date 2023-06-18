@@ -1,6 +1,6 @@
 <?php
  
-namespace SirMekus\Imela;
+namespace App\Providers;
  
 use Illuminate\Support\ServiceProvider;
  

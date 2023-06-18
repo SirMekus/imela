@@ -11,12 +11,15 @@
     "autoload": {
         "files": [
             "app/imela.php"
-           ]
+           ],
+        "psr-4": {
+            "App\\": "app/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SirMekus\\Imela\\ImelaServiceProvider"
+                "App\\Providers\\ImelaServiceProvider"
             ]
         }
     },

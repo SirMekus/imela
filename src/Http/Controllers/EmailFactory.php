@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\Rule;
+use Imela\Mail\ChangeEmail;
 
 class EmailFactory extends Controller
 {
@@ -26,7 +27,7 @@ class EmailFactory extends Controller
 		//This is what will be passed as link
 		$link = URL::temporarySignedRoute('change-email.verify', now()->addMinutes(config('imela.duration')), ['type' => request()->type, 'email'=>$request->new_email]);
 		
-		Mail::to($request->new_email)->send(new \Imela\Mail\ChangeEmail($link));
+		Mail::to($request->new_email)->send(new ChangeEmail($link));
 
 		$message = "An email has been sent to ".$request->new_email.". Click on the link to verify access to the address and complete the email update.";
 

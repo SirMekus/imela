@@ -13,13 +13,13 @@
             "app/imela.php"
            ],
         "psr-4": {
-            "App\\": "app/"
+            "Imela\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "App\\Providers\\ImelaServiceProvider"
+                "Imela\\Providers\\ImelaServiceProvider"
             ]
         }
     },

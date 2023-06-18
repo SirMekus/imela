@@ -11,10 +11,7 @@
     "autoload": {
         "files": [
             "app/imela.php"
-           ],
-        "psr-4": {
-            "SirMekus\\Imela\\": "app/Http/Controllers/"
-        }
+           ]
     },
     "extra": {
         "laravel": {

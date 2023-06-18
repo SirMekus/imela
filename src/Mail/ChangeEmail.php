@@ -1,6 +1,6 @@
 <?php
 
-namespace Imela\Mail\Dashboard;
+namespace Imela\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

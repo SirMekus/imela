@@ -10,7 +10,7 @@
     },
     "autoload": {
         "files": [
-            "app/imela.php"
+            "src/imela.php"
            ],
         "psr-4": {
             "Imela\\": "src/"

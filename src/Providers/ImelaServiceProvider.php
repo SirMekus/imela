@@ -9,11 +9,11 @@ class ImelaServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/imela.php' => config_path('imela.php'),
+            __DIR__.'/../../config/imela.php' => config_path('imela.php'),
         ]);
 
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'imela');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'imela');
     }
 }
